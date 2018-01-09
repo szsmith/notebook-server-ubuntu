@@ -67,9 +67,8 @@ sudo cmake -DUSE_GPU=1 -DOpenCL_LIBRARY=/usr/local/cuda/lib64/libOpenCL.so -Open
 make -j4
 ```
 
-# tensorflow
 
-# Spark
+
 
 # jupyter security
 http://jupyter-notebook.readthedocs.io/en/latest/public_server.html#securing-a-notebook-server
@@ -79,6 +78,4 @@ jupyter notebook --generate-config
 jupyter notebook password
 ```
 
-# sublime
 
-# pycharm
