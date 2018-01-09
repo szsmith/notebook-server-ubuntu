@@ -9,7 +9,7 @@ source ~/.bashrc
 mkdir certificate
 mkdir notebook_work
 conda install -y numpy seaborn scipy scikit-learn keras tensorflow gensim
-conda install -y -c conda-forge xgboost ipython-autotime lightgbm spacy catboost
+conda install -y -c conda-forge xgboost ipython-autotime lightgbm spacy catboost boruta
 conda update -y conda
 conda update -y anaconda
 conda update -y notebook
