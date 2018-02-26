@@ -1,6 +1,7 @@
 #!/bin/bash
 cd /tmp
 curl -O https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+#curl -O https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 bash ./Anaconda3-4.2.0-Linux-x86_64.sh
 cd ~
 echo "PATH=/home/$USER/anaconda3:$PATH" >>~/.bash_profile
