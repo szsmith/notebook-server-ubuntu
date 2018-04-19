@@ -1,8 +1,10 @@
 #!/bin/bash
 cd /tmp
-curl -O https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+curl -O https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
+#curl -O https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
 #curl -O https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
-bash ./Anaconda3-4.2.0-Linux-x86_64.sh
+bash ./Anaconda3-4.4.0-Linux-x86_64.sh
+#bash ./Anaconda3-4.2.0-Linux-x86_64.sh
 cd ~
 echo "PATH=/home/$USER/anaconda3:$PATH" >>~/.bash_profile
 echo "PATH=/home/$USER/anaconda3/bin:$PATH" >> ~/.bash_profile 
@@ -11,7 +13,8 @@ mkdir certificate
 mkdir notebook_work
 conda install -y numpy seaborn scipy scikit-learn keras tensorflow gensim
 #conda install -y numpy seaborn scipy scikit-learn
-conda install -y -c conda-forge xgboost ipython-autotime lightgbm spacy catboost boruta
+conda install -y -c conda-forge xgboost ipython-autotime lightgbm spacy catboost jupyter_contrib_nbextensions jupyter_nbextensions_configurator
+conda install -y -c saravji boruta
 conda install -y -c conda-forge ipython-autotime #catboost boruta
 conda install -c anaconda pandasql
 conda update -y conda
