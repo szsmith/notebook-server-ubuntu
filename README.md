@@ -7,7 +7,7 @@ after successful deployment of ubuntu and logging into the VM execute:
 
     cd $HOME
 
-sudo apt-get install -y git-core
+    sudo apt-get install -y git-core
 
     git clone https://github.com/szsmith/notebook-server-ubuntu.git
 
