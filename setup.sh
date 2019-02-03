@@ -11,10 +11,11 @@ echo "PATH=/home/$USER/anaconda3/bin:$PATH" >> ~/.bash_profile
 source ~/.bashrc
 mkdir certificate
 mkdir notebook_work
-conda install -y numpy seaborn scipy scikit-learn keras tensorflow gensim
+conda install -y numpy seaborn scipy scikit-learn keras tensorflow #gensim
 #conda install -y numpy seaborn scipy scikit-learn
-conda install -y -c conda-forge xgboost ipython-autotime lightgbm spacy catboost jupyter_contrib_nbextensions jupyter_nbextensions_configurator
-#conda install -y -c conda-forge boruta
+conda install -y -c conda-forge xgboost ipython-autotime spacy catboost jupyter_contrib_nbextensions jupyter_nbextensions_configurator
+#conda install -y networkx gensim
+#conda install -y -c conda-forge boruta lightgbm
 conda install -y -c conda-forge ipython-autotime #catboost boruta
 conda install -c anaconda pandasql
 conda update -y conda
